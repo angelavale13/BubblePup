@@ -1,7 +1,8 @@
-/*****************************
+
+/*
 Author: Angela Valenzuela
 Assignment: CSS for Mobile Home Page
-********************************/
+*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -53,8 +54,7 @@ table {
 }
 
 
-/*********************** Global Styles **************************8*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pompiere&display=swap');
+/*Global Styles*/
 
 body, p, footer, h2, h3{
     font-family: 'Open Sans', sans-serif;
@@ -196,7 +196,7 @@ footer p{
 }
 
 /******************************** Mobile Styles ************************************/
-@media screen and (max-width: 320px;)
+
 
 /*************Navigation hamburger with no js. 
 resource: Youtube Tutorial by FollowAndrew https://youtu.be/sjrp1FEHnyA
