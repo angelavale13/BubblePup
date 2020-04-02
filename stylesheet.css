@@ -165,6 +165,7 @@ a, figcaption,footer {
     color:#303030;
 }
 
+/*Heading Styles*/
 h1,
 h2,
 h3,
@@ -182,6 +183,7 @@ h3, figcaption,.subscribe, footer {
     text-align: center;
 }
 
+/*Events Styles*/
 h2.events {
     background-color: #AFE9FF;
 }
@@ -221,15 +223,18 @@ h3.calendarMonth {
     color: white;
 }
 
+/*Home Page Intro Style*/
 .socialComment {
     margin-top: 280px;
     text-align: center;
 }
 
+/*Menu Page Style*/
 h2.menu{
      background-color: #CBFFE6;
     }
 
+/*Contact Page Styles*/
  h2.aboutUs {
     margin-top:280px;
     background-color:#CBFFE6;
@@ -239,30 +244,15 @@ h2.contactUs{
     background-color:#AFE9FF;
 }
 
+/*Footer Style*/
 footer{
     background-color:#FEFFBE;
 }
 
   
-
-/*Tablet Styles*/
-@media all and (max-width:800px) {
-    .navigation {
-        justify-content: space-around;
-    }
-
-    .socialComment {
-        margin-top: 280px;
-    }
-
-    table {
-        visibility: hidden;
-        display: none;
-    }
-}
-
 /*Mobile Styles*/
 @media all and (max-width: 600px) {
+    /*Navigation Styles*/
     .navigation {
         flex-flow: column wrap;
         padding: 0;
@@ -278,6 +268,7 @@ footer{
         border-bottom: none;
     }
 
+    /*Heading Styles*/
     h1 {
         font-size: 3em;
     }
@@ -295,6 +286,7 @@ footer{
         font-size: 1.8em;
     }
 
+    /*Text Styles*/
     body,
     p,
     a {
@@ -306,15 +298,17 @@ footer{
         line-height: 1.6;
     }
 
+    /*Home Page Intro Style*/
     .socialComment {
         margin-top: 450px;
     }
 
+    /*Events Styles*/
     table {
         visibility: hidden;
         display: none;
     }
-
+    
     section.calendarDay {
         border-top: 1px solid rgba(175, 233, 255, 1);
         display: flex;
@@ -335,7 +329,7 @@ footer{
         padding-bottom: 10px;
     }
     
-/*Menu Page*/
+    /*Menu Page*/
     h2.menu{
         margin-top:480px;
     }
@@ -354,7 +348,8 @@ footer{
         display:none;
         visibility:hidden;
     }
-/*Form Styles*/
+    
+    /*Form Styles*/
     form {
         width: auto;
         height: auto;
@@ -409,7 +404,7 @@ footer{
         cursor: pointer;
     }
     
-/*Contact Page*/
+    /*Contact Page*/
     img.aboutUs {
         width: 500px;
         height: 350px;
@@ -431,6 +426,7 @@ footer{
         padding: 10px;
     }
     
+    /*Footer Styles*/
     footer img{
         flex-direction: row;
         justify-content: space-evenly;
@@ -438,7 +434,7 @@ footer{
         align-items: center;
     }
     
- /*Image Carousel Resource: Original CSS code has 121 Lines - Due to adjustments, my version has 37 more lines.
+ /*Image Carousel Resource: Due to adjustments, my version has more lines
     Codepen by Kohei Shingai: https://codepen.io/koheishingai/pen/uKvJF
     Various adjustments made to fit mobile site for educational purposes only.*/
     .carousel {
@@ -601,4 +597,19 @@ footer{
     }
 }
 
+/*Tablet Styles*/
+@media all and (max-width:800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+
+    .socialComment {
+        margin-top: 280px;
+    }
+
+    table {
+        visibility: hidden;
+        display: none;
+    }
+}
  
