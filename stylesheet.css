@@ -251,7 +251,7 @@ footer{
 
   
 /*Mobile Styles*/
-@media all and (max-width: 600px) {
+@media all and (min-device-width: 320px) and (max-device-width: 600px) {
     /*Navigation Styles*/
     .navigation {
         flex-flow: column wrap;
@@ -598,7 +598,7 @@ footer{
 }
 
 /*Tablet Styles*/
-@media all and (max-width:800px) {
+@media all and (max-device-width:800px) {
     .navigation {
         justify-content: space-around;
     }
