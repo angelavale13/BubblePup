@@ -1,428 +1,604 @@
-
 /*
 Author: Angela Valenzuela
 Assignment: CSS for Mobile Home Page
 */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
+/*End CSS Reset*/
 
 
 /*Global Styles*/
+header {
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
 
-body, p, footer, h2, h3{
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+body,
+p,
+a, figcaption,footer {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    padding: 25px;
-    text-align: center
+    font-size: 1em;
+    padding: 10px;
+    color:#303030;
 }
 
-h2{
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Pompiere', cursive;
-    font-size: 3em;
+    padding: 10px;
+    color:#303030;
+    width:100%;
+}
+
+h1,
+h2,
+h3, figcaption,.subscribe, footer {
     text-align: center;
-    padding:35px 0 0;
 }
 
-h3{
-    font-family: 'Pompiere', cursive;
-    font-size: 4em;
-    padding:15px;
-    float:left;
-    clear:both;
-    
+h2.events {
+    background-color: #AFE9FF;
 }
 
-a{
-    color: #000;
+h3.calendarMonth {
+    padding-top: 30px;
+    padding-bottom: 5px;
 }
 
-
-h1{
-    display:none;
-    visibility: hidden;   
-}
-
-h2.bobaTeaTreat{
-    background-color: #FFCFEA;
-}
-
-h2.socialMediaLabel{
-    display:none;
-    visibility: hidden;
-}
-
-section.socialMedia {
-    position:relative;
-}
-
-html, body {
-    margin: 0px;
-    padding: 0px;
-}
-
-
-h2.events{
-    background-color: #AFE9FF; 
-    padding-bottom: 35px;
-}   
-
-h3.calendarLabel{
-    display:none;
-    visibility: hidden;
-}
-
-table{
+.hiddenLabel {
     display: none;
     visibility: hidden;
 }
 
-img.cafeEvent{
-    display:block;
-    width:70%;
-    height:100%;
-    border-radius: 25px;
+
+/*Nav Styles*/
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+    list-style: none;
+    margin: 0;
+    background: #FFCFEA;
 }
 
-figure{
-    display:block;
-    margin-top: 10px;
-    padding-left: 40%;
-    border-radius: 25px;
-    width:55%;
-    height:100%;
+.navigation a {
+    text-decoration: none;
+    color:#303030;
+    display: block;
+    padding: 1em;
+    color: #303030;
 }
 
-figcaption{
-    font-size: 2em;
+.navigation a:hover {
+    background: #B0A8FA;
+    color: white;
 }
 
-form {
-    width: 550px;
-    height: 300px;
-    margin: auto;
-    position: relative;
-    font-size: 2em;
+.socialComment {
+    margin-top: 280px;
+    text-align: center;
 }
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+h2.menu{
+     background-color: #CBFFE6;
+    }
+
+ h2.aboutUs {
+    margin-top:280px;
+    background-color:#CBFFE6;
 }
 
-input[type=reset] {
-    width: 100%;
-    height:40px;
-    background-color: #B0A8FA;
-    color: black;
-    padding: 20px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+h2.contactUs{
+    background-color:#AFE9FF;
 }
-
-input[type=submit] {
-    width: 100%;
-    height:40px;
-    background-color: #FFCFEA;
-    color: black;
-    padding: 20px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
 
 footer{
-    background-color: #FEFFBE;
-    text-align: center; 
+    background-color:#FEFFBE;
 }
 
-footer p{
-    margin:5px;
+  
+
+/*Tablet Styles*/
+@media all and (max-width:800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+
+    .socialComment {
+        margin-top: 280px;
+    }
+
+    table {
+        visibility: hidden;
+        display: none;
+    }
 }
 
-/******************************** Mobile Styles ************************************/
+/*Mobile Styles*/
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
 
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid rgba(176, 168, 250, 0.7);
+    }
 
-/*************Navigation hamburger with no js. 
-resource: Youtube Tutorial by FollowAndrew https://youtu.be/sjrp1FEHnyA
-Various adjustments made to fit mobile site for educational purposes only.************/
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
 
-.header{
-    margin: 0;
-    background-color:#fff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    width:100%;
-    position: sticky;
-    z-index:3;
-    top:0;  
-}
+    h1 {
+        font-size: 3em;
+    }
 
-nav{
-    background-color: #FFCFEA;
-    font-size: 2em;
-}
-.header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #FFCFEA;
-}
+    h2 {
+        font-size: 2.6em;
+    }
 
-.header li a {
-    display:block;
-    padding: 20px 20px;
-    border: 1px solid #f4f4f4;
-    text-decoration: none;
-}
+    h3 {
+        font-size: 2em;
+    }
 
-.header li a:hover, .header .navBtn:hover{
-    background-color: #f4f4f4;
-}
+    h4,
+    h5 {
+        font-size: 1.8em;
+    }
 
-
-.header .logo{
-    display: block;
-    margin: 0 auto;
-}
-
-/*navigation effect*/
-
-.header .navi {
-    clear:both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-
-/*navigation icon*/
-
-.header .navIcon {
-    cursor:pointer;
-    float:right;
-    padding: 20px 20px;
-    position: relative;
-    user-select: none;
-}
-
-.header .navIcon .navInlineIcon {
-    background:#B0A8FA;
-    display: block;
-    height:2px;
-    width: 18px;
-    position: relative;
-    transition: background .2s ease-out;
-}
-
-.header .navIcon .navInlineIcon:before, .header .navIcon .navInlineIcon:after{
-    background: #B0A8FA;
-    content: '';
-    display:block;
-    height:100%;
-    width: 100%;
-    position:absolute;
-    transition: all .2s ease-out;
-}
-
-.header .navIcon .navInlineIcon:before{
-    top:5px;
-}
-
-.header .navIcon .navInlineIcon:after{
-    top:-5px;
-}
-
-/*navigation button*/
-
-.header .navBtn{
-    display: none;
-}
-
-.header .navBtn:checked ~ .navi{
-    max-height: 240px;
-}
-
-.header .navBtn:checked ~ .navIcon .navInlineIcon{
-    background:transparent;
-}
-
-.header .navBtn:checked ~ .navIcon .navInlineIcon:before{
-    transform: rotate(-45deg);
-    top:0;
-}
-
-.header .navBtn:checked ~ .navIcon .navInlineIcon:after{
-    transform: rotate(45deg);
-    top:0;
-}
-
-/*Image Carousel Resource:
-Codepen by Kohei Shingai: https://codepen.io/koheishingai/pen/uKvJF
-Various adjustments made to fit mobile site for educational purposes only.*/
-
-.carousel {
-    position: relative;
-    height:450px;
-}
-
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height:445px;
+    body,
+    p,
+    a {
+        font-size: 1.3em;
+        padding: 10px;
+    }
     
+    p{
+        line-height: 1.6;
+    }
+
+    .socialComment {
+        margin-top: 450px;
+    }
+
+    table {
+        visibility: hidden;
+        display: none;
+    }
+
+    section.calendarDay {
+        border-top: 1px solid rgba(175, 233, 255, 1);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    section.dayOfMonth {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.cafeEvent {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+        padding-bottom: 10px;
+    }
+    
+/*Menu Page*/
+    h2.menu{
+        margin-top:480px;
+    }
+    
+    .bubbleTea{
+        display:none;
+        visibility: hidden;
+    }
+    
+    .bakedGoods{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .dogTreats{
+        display:none;
+        visibility:hidden;
+    }
+/*Form Styles*/
+    form {
+        width: auto;
+        height: auto;
+        font-size: 1em;
+        padding:10px;
+        margin:10px 0;
+        border: 1px solid rgba(175, 233, 255, 1);
+        border-radius: 4px;
+    }
+    
+    #fName, #email, #lName, #subjectEmail, #bodyEmail {
+        background-color: rgba(175, 233, 255, .31)
+    }
+    
+    #bodyEmail{
+        height: 150px;
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgba(175, 233, 255, 1);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=reset] {
+        width: 100%;
+        height: 40px;
+        background-color: #B0A8FA;
+        color: #303030;
+        font-size: 1.2em;
+        padding: 10px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        height: 40px;
+        background-color: #FFCFEA;
+        color: #303030;
+        font-size: 1.2em;
+        padding: 10px 0;
+        margin-top: 5px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+/*Contact Page*/
+    img.aboutUs {
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 20px;
+        padding-bottom: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    h2.aboutUs {
+        margin-top:480px;
 }
 
-.carousel-open:checked + .carousel-item {
-    position: static;
-    opacity: 100;
+    section.businessInfo{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    footer img{
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding:20px;
+        align-items: center;
+    }
+    
+ /*Image Carousel Resource:
+    Codepen by Kohei Shingai: https://codepen.io/koheishingai/pen/uKvJF
+    Various adjustments made to fit mobile site for educational purposes only.*/
+    .carousel {
+        position: relative;
+        height: 450px;
+
+    }
+
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 445px;
+
+    }
+
+    .carousel-open:checked + .carousel-item {
+        position: static;
+        opacity: 100;
+    }
+
+    .carousel-item {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .carousel-item img {
+        display: block;
+        margin: 0 auto;
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .carousel-control {
+        background: rgba(255, 207, 234, 0.8);
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        height: 40px;
+        line-height: 35px;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        text-align: center;
+        width: 40px;
+        z-index: 4;
+    }
+
+    .carousel-control.prev {
+        left: 10%;
+    }
+
+    .carousel-control.next {
+        right: 10%;
+    }
+
+    .carousel-control:hover {
+        background: rgba(176, 168, 250, 0.8);
+        color: #B0A8FA;
+    }
+
+    .carousel #carousel-1:checked ~ .control-1,
+    .carousel #carousel-2:checked ~ .control-2,
+    .carousel #carousel-3:checked ~ .control-3,
+    .carousel #carousel-4:checked ~ .control-4,
+    .carousel #carousel-5:checked ~ .control-5,
+    .carousel #carousel-6:checked ~ .control-6,
+    .carousel #carousel-7:checked ~ .control-7,
+    .carousel #carousel-8:checked ~ .control-8,
+    .carousel #carousel-9:checked ~ .control-9{
+        display: block;
+    }
+
+    .carousel1 #carousel-1:checked ~ .control-1,
+    .carousel1 #carousel-2:checked ~ .control-2,
+    .carousel1 #carousel-3:checked ~ .control-3,
+    .carousel1 #carousel-4:checked ~ .control-4{
+        display: block;
+    }
+
+    .carousel2 #carousel-9:checked ~ .control-9,
+    .carousel2 #carousel-10:checked ~ .control-10,
+    .carousel2 #carousel-11:checked ~ .control-11,
+    .carousel2 #carousel-12:checked ~ .control-12{
+        display: block;
+    }
+
+    .carousel3 #carousel-5:checked ~ .control-5,
+    .carousel3 #carousel-6:checked ~ .control-6,
+    .carousel3 #carousel-7:checked ~ .control-7,
+    .carousel3 #carousel-8:checked ~ .control-8{
+        display: block;
+    }
+
+    .carousel-indicators {
+        list-style: none;
+        margin: 0;
+        padding: 25px;
+        position: absolute;
+        bottom: 1%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 4;
+    }
+
+    .carousel-indicators li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .carousel-bullet:hover {
+        color: #B0A8FA;
+    }
+
+    .carousel-bullet {
+        color: #FFCFEA;
+        cursor: pointer;
+        display: block;
+        font-size: 45px;
+    }
+
+    .carousel #carousel-1:checked ~ .control-9 ~ .carousel-indicators li:nth-child(9) .carousel-bullet,
+    .carousel #carousel-2:checked ~ .control-8 ~ .carousel-indicators li:nth-child(8) .carousel-bullet,
+    .carousel #carousel-3:checked ~ .control-7 ~ .carousel-indicators li:nth-child(7) .carousel-bullet,
+    .carousel #carousel-4:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet,
+    .carousel #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
+    .carousel #carousel-6:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+    .carousel #carousel-7:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+    .carousel #carousel-8:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+    .carousel #carousel-9:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet{
+        color: #B0A8FA;
+    }
+
+    .carousel1 #carousel-1:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
+    .carousel1 #carousel-2:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+    .carousel1 #carousel-3:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+    .carousel1 #carousel-4:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet{
+        color: #B0A8FA;
+    }
+
+    .carousel2 #carousel-9:checked ~ .control-12 ~ .carousel-indicators li:nth-child(12) .carousel-bullet,
+    .carousel2 #carousel-10:checked ~ .control-11 ~ .carousel-indicators li:nth-child(11) .carousel-bullet,
+    .carousel2 #carousel-11:checked ~ .control-10 ~ .carousel-indicators li:nth-child(10) .carousel-bullet,
+    .carousel2 #carousel-12:checked ~ .control-9 ~ .carousel-indicators li:nth-child(9) .carousel-bullet{
+        color: #B0A8FA;
+    }
+
+    .carousel3 #carousel-5:checked ~ .control-8 ~ .carousel-indicators li:nth-child(8) .carousel-bullet,
+    .carousel3 #carousel-6:checked ~ .control-7 ~ .carousel-indicators li:nth-child(7) .carousel-bullet,
+    .carousel3 #carousel-7:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet,
+    .carousel3 #carousel-8:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet{
+        color: #B0A8FA;
+    }
 }
 
-.carousel-item {
-    position: absolute;
-    opacity: 0;
-}
-
-.carousel-item img {
-    display: block;
-    margin: 0 auto;
-    height: 350px;
-    border-radius: 25px;
-}
-
-.carousel-control {
-    background: rgba(255, 207, 234, 0.8);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 4;
-}
-
-.carousel-control.prev {
-    left: 10%;
-}
-
-.carousel-control.next {
-    right: 10%;
-}
-
-.carousel-control:hover {
-    background: rgba(176, 168, 250, 0.8);
-    color: #B0A8FA;
-}
-
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3,
-#carousel-4:checked ~ .control-4,
-#carousel-5:checked ~ .control-5,
-#carousel-6:checked ~ .control-6,
-#carousel-7:checked ~ .control-7,
-#carousel-8:checked ~ .control-8,
-#carousel-9:checked ~ .control-9 {
-    display: block;
-}
-
-.carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 25px;
-    position: absolute;
-    bottom: 1%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.carousel-bullet:hover {
-    color: #B0A8FA;
-}
-.carousel-bullet {
-    color: #FFCFEA;
-    cursor: pointer;
-    display: block;
-    font-size: 45px;
-}
-
-#carousel-1:checked ~ .control-9 ~ .carousel-indicators li:nth-child(9) .carousel-bullet,
-#carousel-2:checked ~ .control-8 ~ .carousel-indicators li:nth-child(8) .carousel-bullet,
-#carousel-3:checked ~ .control-7 ~ .carousel-indicators li:nth-child(7) .carousel-bullet,
-#carousel-4:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet,
-#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
-#carousel-6:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
-#carousel-7:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-#carousel-8:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-9:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet {
-    color: #B0A8FA;
-}
+ 
