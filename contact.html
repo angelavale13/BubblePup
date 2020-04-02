@@ -10,47 +10,50 @@ File name: contact.html
     <title>Boba Tea &amp; Treats</title>
     <meta charset="utf-8">
     <meta name="description" content="Bubble Pup Contact Information and About Our Team">
+    <link href="https://fonts.googleapis.com/css?family=Pompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet2.css" />
 </head>
 
 <body>
     <header>
-        <h1>Bubble Pup</h1>
-        <a href="index.html"><img src="media/BubblePupLogo_w235px.png" alt="puppy licks bubble"></a>
-        <h2>Boba Tea &amp; Treats</h2>
+        <h1>Boba Tea &amp; Treats</h1>
+        <a href="index2.html"><img class="logo" src="media/BubblePupLogo_w235px.png" alt="logo of puppy licking bubble"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <h3>Main Navivation Label</h3>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
     <main>
         <section>
-            <h2>About Us</h2>
-            <img src="media/AboutUsPicture_w225px.jpg" alt="3 dogs crowd around 1 bubble">
+            <h2 class="aboutUs">About Us</h2>
+            <img class="aboutUs" src="media/AboutUsPicture_w225px.jpg" alt="3 dogs crowd around 1 bubble">
             <p>Bubble Pup was founded in January 2020 by four ASU students who love the idea of bringing puppies, dogs, doggos, and furry pals to a cute boba cafe where both owners and pets can enjoy a nice treat. They were inspired by the want to take their own furry friends to a place such as ours, but one did not exist at the time.</p>
         </section>
         <section>
-            <h2>Contact Us</h2>
+            <h2 class="contactUs">Contact Us</h2>
+            <section class="businessInfo">
             <h3>Bubble Pup</h3>
-            <h3>Address:</h3><p>5230 S Power Rd, Gilbert, AZ 85295</p>
-            <h3>Phone:</h3><p>(480)PUP-5555</p>
-            <h3>Hours:</h3><p> Monday - Friday: 9am-5pm <br>
-            Saturdays &amp; Sundays: 11am-10pm</p>
-            <h2>Contact Form</h2>
+            <h4>Address</h4><p>5230 S Power Rd, Gilbert, AZ 85295</p>
+            <h4>Phone</h4><p>(480)PUP-5555</p>
+            <h4>Hours</h4><p>Monday - Friday: 9am-5pm</p> 
+            <p>Saturdays &amp; Sundays: 11am-10pm</p>
+            </section>
+            <h2 class="hiddenLabel">Contact Form</h2>
                 <form>
-                    <label for="fName">First Name</label><br>
-                        <input type="text" id="fName" name="fName"><br>
-                    <label for="lName">Last Name</label><br>
-                        <input type="text" id="lName" name="lName"><br>
-                    <label for="email">Email</label><br>
-                        <input type="text" id="email" name="email"><br>
-                    <label for="subjectEmail">Subject</label><br>
-                        <input type="text" id="subjectEmail" name="subjectEmail"><br>
-                    <label for="bodyEmail">Body</label><br>
-                        <input type="text" id="bodyEmail" name="bodyEmail"><br>
+                    <label for="fName">First Name</label>
+                        <input type="text" id="fName" name="fName">
+                    <label for="lName">Last Name</label>
+                        <input type="text" id="lName" name="lName">
+                    <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    <label for="subjectEmail">Subject</label>
+                        <input type="text" id="subjectEmail" name="subjectEmail">
+                    <label for="bodyEmail">Body</label>
+                        <input type="text" id="bodyEmail" name="bodyEmail">
                     <input type="reset" value="Reset">
                     <input type="submit" value="Submit">
                 </form>
@@ -58,12 +61,11 @@ File name: contact.html
         
     </main>
     <footer>
-        aavalen9@bubblepup.net
+        <p>aavalen9@bubblepup.net</p>
         <img src="media/twitter_75px.jpg" alt="twitter icon">
         <img src="media/facebook_75px.jpg" alt="facebook icon">
         <img src="media/instagram-sketched_75px.jpg" alt="instagram icon">
-        &copy;2020 Bubble Pup Boba Tea &amp; Treats Inc.
-        For Educational Purposes Only
+        <p>&copy;2020 Bubble Pup Boba Tea &amp; Treats Inc.</p> <p>For Educational Purposes Only</p>
     </footer>
 </body>
 </html>
