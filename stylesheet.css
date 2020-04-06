@@ -404,13 +404,11 @@ footer{
     
     /*Contact Page*/
     img.aboutUs {
-        width: 500px;
-        height: 350px;
         object-fit: cover;
         border-radius: 20px;
         padding-bottom: 10px;
-        display: block;
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
     
     h2.aboutUs {
