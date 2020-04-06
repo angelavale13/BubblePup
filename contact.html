@@ -17,7 +17,7 @@ File name: contact.html
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css" />
     <script>
-        document.createElement("picture");
+        document.createElement("img");
     </script>
     <script src="picturefill.min.js" async></script>
 </head>
@@ -37,13 +37,12 @@ File name: contact.html
     <main>
         <section>
             <h2 class="aboutUs">About Us</h2>
-            <picture>
-                <source media="(min-width: 45em)"
-                srcset="media/bubblesAndPups_1024.jpg">
-                <source media="(min-width: 32em)"
-                srcset="media/bubblesAndPups_768.jpg">
-                <img src="media/bubblesAndPups_320.jpg" alt="dogs playing with bubbles">
-            </picture>
+            <img src="media/bubblesAndPups_320.jpg"
+                 srcset="media/bubblesAndPups_1024.jpg 1024w,
+                         media/bubblesAndPups_768.jpg 768w,
+                         media/bubblesAndPups_320.jpg 320w"
+                 sizes="(min-width: 20em) 100vw"
+                 alt="dogs playing with bubbles" />
             <p>Bubble Pup was founded in January 2020 by four ASU students who love the idea of bringing puppies, dogs, doggos, and furry pals to a cute boba cafe where both owners and pets can enjoy a nice treat. They were inspired by the want to take their own furry friends to a place such as ours, but one did not exist at the time.</p>
         </section>
         <section>
