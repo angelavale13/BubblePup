@@ -6,148 +6,59 @@ Assignment: CSS for Mobile Home Page
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
 body {
-    line-height: 1;
+	line-height: 1;
 }
-
-ol,
-ul {
-    list-style: none;
+ol, ul {
+	list-style: none;
 }
-
-blockquote,
-q {
-    quotes: none;
+blockquote, q {
+	quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
 /*End CSS Reset*/
 
 
 /*Global Styles*/
 header {
     background-color: white;
+    width:20em;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 5;
 }
 
@@ -157,8 +68,7 @@ header {
 }
 
 body,
-p,
-a, figcaption,footer {
+p, figcaption,footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     padding: 10px;
@@ -166,20 +76,13 @@ a, figcaption,footer {
 }
 
 /*Heading Styles*/
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1,h2,h3,h4,h5 {
     font-family: 'Pompiere', cursive;
     padding: 10px;
     color:#303030;
-    width:100%;
 }
 
-h1,
-h2,
-h3, figcaption,.subscribe, footer {
+h1,h2,h3, figcaption,.subscribe, footer {
     text-align: center;
 }
 
@@ -204,7 +107,6 @@ h3.calendarMonth {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-
     list-style: none;
     margin: 0;
     background: #FFCFEA;
@@ -218,140 +120,16 @@ h3.calendarMonth {
     color: #303030;
 }
 
+/*fix hover*********************************************/
 .navigation a:hover {
     background: #B0A8FA;
     color: white;
 }
 
-/*Home Page Intro Style*/
-.socialComment {
-    margin-top: 280px;
-    text-align: center;
-}
-
-/*Menu Page Style*/
-h2.menu{
-     background-color: #CBFFE6;
-    }
-
-/*Contact Page Styles*/
- h2.aboutUs {
-    margin-top:280px;
-    background-color:#CBFFE6;
-}
-
-h2.contactUs{
-    background-color:#AFE9FF;
-}
-
-/*Footer Style*/
-footer{
-    background-color:#FEFFBE;
-}
-
-  
-/*Mobile Styles*/
-@media all and (min-device-width: 320px) and (max-device-width: 600px) {
-    /*Navigation Styles*/
-    .navigation {
-        flex-flow: column wrap;
-        padding: 0;
-    }
-
-    .navigation a {
-        text-align: center;
-        padding: 10px;
-        border-bottom: 1px solid rgba(176, 168, 250, 0.7);
-    }
-
-    .navigation li:last-of-type a {
-        border-bottom: none;
-    }
-
-    /*Heading Styles*/
-    h1 {
-        font-size: 3em;
-    }
-
-    h2 {
-        font-size: 2.6em;
-    }
-
-    h3 {
-        font-size: 2em;
-    }
-
-    h4,
-    h5 {
-        font-size: 1.8em;
-    }
-
-    /*Text Styles*/
-    body,
-    p,
-    a {
-        font-size: 1.3em;
-        padding: 10px;
-    }
-    
-    p{
-        line-height: 1.6;
-    }
-
-    /*Home Page Intro Style*/
-
-
-    /*Events Styles*/
-    table {
-        visibility: hidden;
-        display: none;
-    }
-    
-    section.calendarDay {
-        border-top: 1px solid rgba(175, 233, 255, 1);
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-    }
-
-    section.dayOfMonth {
-        display: flex;
-        flex-direction: column;
-    }
-
-    img.cafeEvent {
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 20px;
-        padding-bottom: 10px;
-    }
-    
-    /*Menu Page*/
-    h2.menu{
-        margin-top:480px;
-    }
-    
-    .bubbleTea{
-        display:none;
-        visibility: hidden;
-    }
-    
-    .bakedGoods{
-        display: none;
-        visibility: hidden;
-    }
-    
-    .dogTreats{
-        display:none;
-        visibility:hidden;
-    }
-    
-    /*Form Styles*/
+/*Form Styles*/
     form {
         width: auto;
         height: auto;
-        font-size: 1em;
         padding:10px;
         margin:10px 0;
         border: 1px solid rgba(175, 233, 255, 1);
@@ -382,7 +160,6 @@ footer{
         height: 40px;
         background-color: #B0A8FA;
         color: #303030;
-        font-size: 1.2em;
         padding: 10px 0;
         border: none;
         border-radius: 4px;
@@ -394,12 +171,142 @@ footer{
         height: 40px;
         background-color: #FFCFEA;
         color: #303030;
-        font-size: 1.2em;
         padding: 10px 0;
         margin-top: 5px;
         border: none;
         border-radius: 4px;
         cursor: pointer;
+    }
+
+/*Menu Page Style*/
+h2.menu{
+     background-color: #CBFFE6;
+    }
+
+/*Contact Page Styles*/
+ h2.aboutUs {
+    margin-top:280px;
+    background-color:#CBFFE6;
+}
+
+h2.contactUs{
+    background-color:#AFE9FF;
+}
+
+/*Footer Style*/
+footer{
+    background-color:#FEFFBE;
+}
+
+  
+/*Mobile Styles*/
+@media screen and (min-device-width: 320px) and (max-device-width: 667px) {
+    /*Navigation Styles*/
+    
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid rgba(176, 168, 250, 0.7);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+
+    /*Heading Styles*/
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 2.6em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4,h5 {
+        font-size: 1.8em;
+    }
+
+    /*Text Styles*/
+    body,
+    p {
+        padding: 10px;
+    }
+    
+    p{
+        line-height: 1.6;
+    }
+
+    /*Home Page Intro Style*/
+     .socialComment {
+        margin-top: 380px;
+    }
+
+    /*Events Styles*/
+    table {
+        visibility: hidden;
+        display: none;
+    }
+    
+    section.calendarDay {
+        border-top: 1px solid rgba(175, 233, 255, 1);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    section.dayOfMonth {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.cafeEvent {
+        width: 175px;
+        height: 175px;
+        object-fit: cover;
+        border-radius: 20px;
+        padding-bottom: 10px;
+    }
+    
+    /*Menu Page*/
+    h2.menu{
+        margin-top:480px;
+    }
+    
+    .bubbleTea{
+        display:none;
+        visibility: hidden;
+    }
+    
+    .bakedGoods{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .dogTreats{
+        display:none;
+        visibility:hidden;
+    }
+    
+    /*Form Styles*/
+    form {
+        font-size: 1em;
+    }
+    
+    input[type=reset] {
+        font-size: 1.2em;
+    }
+
+    input[type=submit] {
+        font-size: 1.2em;
     }
     
     /*Contact Page*/
@@ -416,7 +323,6 @@ footer{
 }
 
     section.businessInfo{
-        width:100%;
         display: flex;
         flex-direction: column;
         padding: 10px;
@@ -428,173 +334,15 @@ footer{
         justify-content: space-evenly;
         padding:20px;
         align-items: center;
+        width:50px;
+        height:50px;
     }
     
- /*Image Carousel Resource: Due to adjustments, my version has more lines
-    Codepen by Kohei Shingai: https://codepen.io/koheishingai/pen/uKvJF
-    Various adjustments made to fit mobile site for educational purposes only.*/
-    .carousel {
-        position: relative;
-        height: 450px;
 
-    }
-
-    .carousel-inner {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 445px;
-
-    }
-
-    .carousel-open:checked + .carousel-item {
-        position: static;
-        opacity: 100;
-    }
-
-    .carousel-item {
-        position: absolute;
-        opacity: 0;
-    }
-
-    .carousel-item img {
-        display: block;
-        margin: 0 auto;
-        height: 350px;
-        width: 350px;
-        object-fit: cover;
-        border-radius: 25px;
-    }
-
-    .carousel-control {
-        background: rgba(255, 207, 234, 0.8);
-        border-radius: 50%;
-        color: #fff;
-        cursor: pointer;
-        display: none;
-        height: 40px;
-        line-height: 35px;
-        position: absolute;
-        top: 50%;
-        cursor: pointer;
-        transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        text-align: center;
-        width: 40px;
-        z-index: 4;
-    }
-
-    .carousel-control.prev {
-        left: 10%;
-    }
-
-    .carousel-control.next {
-        right: 10%;
-    }
-
-    .carousel-control:hover {
-        background: rgba(176, 168, 250, 0.8);
-        color: #B0A8FA;
-    }
-
-    .carousel #carousel-1:checked ~ .control-1,
-    .carousel #carousel-2:checked ~ .control-2,
-    .carousel #carousel-3:checked ~ .control-3,
-    .carousel #carousel-4:checked ~ .control-4,
-    .carousel #carousel-5:checked ~ .control-5,
-    .carousel #carousel-6:checked ~ .control-6,
-    .carousel #carousel-7:checked ~ .control-7,
-    .carousel #carousel-8:checked ~ .control-8,
-    .carousel #carousel-9:checked ~ .control-9{
-        display: block;
-    }
-
-    .carousel1 #carousel-1:checked ~ .control-1,
-    .carousel1 #carousel-2:checked ~ .control-2,
-    .carousel1 #carousel-3:checked ~ .control-3,
-    .carousel1 #carousel-4:checked ~ .control-4{
-        display: block;
-    }
-
-    .carousel2 #carousel-9:checked ~ .control-9,
-    .carousel2 #carousel-10:checked ~ .control-10,
-    .carousel2 #carousel-11:checked ~ .control-11,
-    .carousel2 #carousel-12:checked ~ .control-12{
-        display: block;
-    }
-
-    .carousel3 #carousel-5:checked ~ .control-5,
-    .carousel3 #carousel-6:checked ~ .control-6,
-    .carousel3 #carousel-7:checked ~ .control-7,
-    .carousel3 #carousel-8:checked ~ .control-8{
-        display: block;
-    }
-
-    .carousel-indicators {
-        list-style: none;
-        margin: 0;
-        padding: 25px;
-        position: absolute;
-        bottom: 1%;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index: 4;
-    }
-
-    .carousel-indicators li {
-        display: inline-block;
-        margin: 0 5px;
-    }
-
-    .carousel-bullet:hover {
-        color: #B0A8FA;
-    }
-
-    .carousel-bullet {
-        color: #FFCFEA;
-        cursor: pointer;
-        display: block;
-        font-size: 45px;
-    }
-
-    .carousel #carousel-1:checked ~ .control-9 ~ .carousel-indicators li:nth-child(9) .carousel-bullet,
-    .carousel #carousel-2:checked ~ .control-8 ~ .carousel-indicators li:nth-child(8) .carousel-bullet,
-    .carousel #carousel-3:checked ~ .control-7 ~ .carousel-indicators li:nth-child(7) .carousel-bullet,
-    .carousel #carousel-4:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet,
-    .carousel #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
-    .carousel #carousel-6:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
-    .carousel #carousel-7:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-    .carousel #carousel-8:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-    .carousel #carousel-9:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet{
-        color: #B0A8FA;
-    }
-
-    .carousel1 #carousel-1:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
-    .carousel1 #carousel-2:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-    .carousel1 #carousel-3:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-    .carousel1 #carousel-4:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet{
-        color: #B0A8FA;
-    }
-
-    .carousel2 #carousel-9:checked ~ .control-12 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
-    .carousel2 #carousel-10:checked ~ .control-11 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-    .carousel2 #carousel-11:checked ~ .control-10 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-    .carousel2 #carousel-12:checked ~ .control-9 ~ .carousel-indicators li:nth-child(1) .carousel-bullet{
-        color: #B0A8FA;
-    }
-
-    .carousel3 #carousel-5:checked ~ .control-8 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
-    .carousel3 #carousel-6:checked ~ .control-7 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-    .carousel3 #carousel-7:checked ~ .control-6 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-    .carousel3 #carousel-8:checked ~ .control-5 ~ .carousel-indicators li:nth-child(1) .carousel-bullet{
-        color: #B0A8FA;
-    }
 }
 
 /*Tablet Styles*/
-@media all and (max-device-width:800px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .navigation {
         justify-content: space-around;
     }
@@ -608,4 +356,19 @@ footer{
         display: none;
     }
 }
- 
+
+/*Desktop Styles*/
+@media screen and (min-device-width: 1050px){
+    .navigation {
+        justify-content: space-around;
+    }
+    
+    .socialComment {
+        margin-top: 450px;
+    }
+    
+    table {
+        padding:20px;
+        max-width: 50%;
+    }
+}
