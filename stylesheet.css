@@ -105,6 +105,7 @@ h3.calendarMonth {
 /*Nav Styles*/
 nav{
     background: #FFCFEA;
+    width:100%;
 }
 .navigation {
     display: flex;
@@ -203,7 +204,7 @@ footer{
 
   
 /*Mobile Styles*/
-@media screen and (min-device-width: 320px) and (max-device-width: 667px) {
+@media screen and (min-device-width: 20em) and (max-device-width: 42em) {
     
     .logo {
         display: none;
@@ -354,7 +355,7 @@ footer{
 }
 
 /*Tablet Styles*/
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-device-width: 48em) and (max-device-width: 64em) {
     .navigation {
         justify-content: space-around;
     }
@@ -370,7 +371,7 @@ footer{
 }
 
 /*Desktop Styles*/
-@media screen and (min-device-width: 1050px){
+@media screen and (min-device-width: 65empx){
     .navigation {
         justify-content: space-around;
     }
