@@ -55,11 +55,12 @@ table {
 /*Global Styles*/
 header {
     background-color: white;
-    width:20.5em;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
+    width:100%;
     top: 0;
     z-index: 5;
+    
 }
 
 .logo {
@@ -73,6 +74,7 @@ p, figcaption,footer {
     font-size: 1em;
     padding: 10px;
     color:#303030;
+    margin:0 auto;
 }
 
 /*Heading Styles*/
@@ -204,7 +206,12 @@ footer{
 
   
 /*Mobile Styles*/
-@media screen and (min-device-width: 20em) and (max-device-width: 42em) {
+@media screen and (max-device-width: 42em) {
+    
+    /* Header */
+    header {
+        width:100%;
+    }
     
     .logo {
         display: none;
@@ -213,6 +220,8 @@ footer{
     /*Navigation Styles*/
     
     nav{
+        position: static;
+        width: auto;
         padding: 0 10px;
     }
     
