@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Pompiere&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 
 <body>
@@ -18,9 +19,9 @@
         <a href="index.html"><img class="logo" src="media/BubblePupLogo_w235px.png" alt="logo of puppy licking bubble"></a>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -28,15 +29,23 @@
         <section>
             <h2 class="hiddenLabel">Social Media Pictures</h2>
             <p class="socialComment">Share your favorite boba tea &amp; puppy pictures with us! #bubblepup</p>
-            
+                <section class="socialImages">
+                    <h2 class=hiddenLabel>Gallery of Social Media Images</h2>
+                    <figure><img class="socialImages" src="media/bobaLickerPup_w225px.png" alt="puppy licks boba tea cup"><figcaption>#bubblepup by @flippity</figcaption></figure>
+                    <figure><img class="socialImages" src="media/pupsAndCustomers_w225px.jpg" alt="customers and their dogs"><figcaption>#bubblepup by @bubblepuppies</figcaption></figure>
+                    <figure><img class="socialImages" src="media/pinkAndPurpleBobaSocialMedia_w225px.jpg" alt="cheers with two boba tea cups"><figcaption>#bubblepup by @doggo123</figcaption></figure>
+                    <figure><img class="socialImages" src="media/multipleBobaSocialMedia.jfif" alt="four cups of different boba tea"><figcaption>#bubblepup by @doggard</figcaption></figure>
+                    <figure><img class="socialImages" src="media/marshmallowBoba.jpg" alt="marshmallow bubble tea with macarrons and cake pop"><figcaption>#bubblepup by @bubbles4life</figcaption></figure>
+                    <figure><img class="socialImages" src="media/smilingPupper_w225px.jpg" alt="happy dog smiling"><figcaption>#bubblepup by @bones</figcaption></figure>
+                    <figure><img class="socialImages" src="media/pinkBobaSocialMedia.jfif" alt="boba tea with heart bubble filter"><figcaption>#bubblepup by @kimposs</figcaption></figure>
+                   <figure><img class="socialImages" src="media/pupCafe_w225px.jpg" alt="happy dog smiling at camera"><figcaption>#bubblepup by @bigwoof</figcaption></figure>
+                </section>
         </section>
-        
-        
         <section>
             <h2 class="events">Events</h2>
             <h3 class="calendarMonth">January 2020</h3>
             <section class="horizontalEvent">
-                    
+                    <h2 class=hiddenLabel>Contents of Calendar</h2>
                     <!--Section calendarDay for styling purposes-->
                     <section class="calendarDay">
                         <h2 class="hiddenLabel">Calendar Day Contents</h2>
@@ -73,6 +82,18 @@
                             <figcaption>Pup Wash</figcaption>
                         </figure>
                     </section>
+                    <!--Section calendarDay for styling purposes-->
+                    <section class="calendarDay">
+                        <h2 class="hiddenLabel">Calendar Day Contents</h2>
+                        <section class="dayOfMonth">
+                            <h4>Sunday</h4>
+                            <h5>26</h5>
+                        </section>
+                        <figure>
+                            <img class="cafeEvent" src="media/puppyBath_320.jpg" alt="puppy in a kiddy pool">
+                            <figcaption>Pup Wash</figcaption>
+                        </figure>
+                    </section>
                     <section class="eventForm">
                         <p class="subscribe">Subscribe to get our events sent to your email</p>
                         <h2 class="hiddenLabel">Subscription Form</h2>
@@ -89,10 +110,11 @@
             </section>
     </main>
     <footer>
+        <a href="#"><img src="media/twitter_75px.jpg" alt="twitter icon"></a>
+        <a href="#"><img src="media/facebook_75px.jpg" alt="facebook icon"></a>
+        <a href="#"><img src="media/instagram-sketched_75px.jpg" alt="instagram icon"></a>
         <p>aavalen9@bubblepup.net</p>
-        <img src="media/twitter_75px.jpg" alt="twitter icon">
-        <img src="media/facebook_75px.jpg" alt="facebook icon">
-        <img src="media/instagram-sketched_75px.jpg" alt="instagram icon">
         <p>&copy;2020 Bubble Pup Boba Tea &amp; Treats Inc.</p> <p>For Educational Purposes Only</p>
     </footer>
+    <a class="scrollTopBtn" href="#"><i class="fas fa-arrow-up"></i></a>
 </body>

@@ -55,12 +55,12 @@ table {
 /*Global Styles*/
 header {
     background-color: white;
-    overflow: hidden;
-    position: absolute;
     width:100%;
-    top: 0;
-    z-index: 5;
     
+}
+
+h1{
+    padding: 1em;
 }
 
 .logo {
@@ -71,31 +71,19 @@ header {
 body,
 p, figcaption,footer {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    padding: 10px;
-    color:#303030;
+    padding: 1em;
+    color:#4f4f4f;
     margin:0 auto;
 }
 
 /*Heading Styles*/
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5, .navigation li a {
     font-family: 'Pompiere', cursive;
-    padding: 10px;
-    color:#303030;
+    color:#4f4f4f;
 }
 
 h1,h2,h3, figcaption,.subscribe, footer {
     text-align: center;
-}
-
-/*Events Styles*/
-h2.events {
-    background-color: #AFE9FF;
-}
-
-h3.calendarMonth {
-    padding-top: 30px;
-    padding-bottom: 5px;
 }
 
 .hiddenLabel {
@@ -104,7 +92,7 @@ h3.calendarMonth {
 }
 
 
-/*Nav Styles*/
+/*Navigation Styles*/
 nav{
     background: #FFCFEA;
     width:100%;
@@ -118,71 +106,98 @@ nav{
     background: #FFCFEA;
 }
 
-.navigation a {
+.navigation li a {
     text-decoration: none;
-    color:#303030;
     display: block;
-    padding: 1em;
-    color: #303030;
-    
+    padding: 0 2em;
 }
 
 .navigation a:hover {
-    background: #B0A8FA;
-    color: white;
+    background:#FEFFBE ;
+    color: #4f4f4f;
+}
+
+.selected {
+    background: #CBFFE6;
+    color: #4f4f4f;
+}
+
+
+/*Image Styles*/
+p.socialComment{
+    text-align: center;
+}
+
+section.socialImages{
+    display:flex;
+    flex-flow: row wrap;
+}
+
+img.socialImages, img.cafeEvent{
+    display:flex;
+    flex-flow: row wrap;
+    object-fit: cover;
+    border-radius: 2em;
+}
+
+/*Events Styles*/
+h2.events {
+    background-color: #AFE9FF;
+}
+
+h3.calendarMonth {
+    padding-top: 1em;
+}
+
+section.calendarDay {
+    display:flex;
+    justify-content: space-between;
 }
 
 /*Form Styles*/
-    form {
-        width: auto;
-        height: auto;
-        padding:10px;
-        margin:10px 0;
-        border: 1px solid rgba(175, 233, 255, 1);
-        border-radius: 4px;
-    }
+form {
+    width: auto;
+    height: auto;
+    padding:1em;
+    margin:1em 0;
+    border: solid rgba(175, 233, 255, 1);
+    border-radius: 1em;
+}
     
-    #fName, #email, #lName, #subjectEmail, #bodyEmail {
-        background-color: rgba(175, 233, 255, .31)
-    }
-    
-    #bodyEmail{
-        height: 150px;
-    }
+#fName, #email, #lName, #subjectEmail, #bodyEmail {
+    background-color: rgba(175, 233, 255, .31)
+}
 
-    input[type=text],
-    select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid rgba(175, 233, 255, 1);
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
+#bodyEmail{
+    height: 9em;
+}
 
-    input[type=reset] {
-        width: 100%;
-        height: 40px;
-        background-color: #B0A8FA;
-        color: #303030;
-        padding: 10px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+input {
+    width:100%;
+    border-radius: 1em;
+}
 
-    input[type=submit] {
-        width: 100%;
-        height: 40px;
-        background-color: #FFCFEA;
-        color: #303030;
-        padding: 10px 0;
-        margin-top: 5px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+input[type=text],
+select {
+    padding: 1em 2em;
+    margin: 1em 0;
+    display: inline-block;
+    border: solid rgba(175, 233, 255, 1);
+
+    box-sizing: border-box;
+}
+
+input[type=reset] {
+    background-color: #B0A8FA;
+    color: #4f4f4f;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: #FFCFEA;
+    color: #4f4f4f;
+    cursor: pointer;
+}
 
 /*Menu Page Style*/
 h2.menu{
@@ -191,7 +206,6 @@ h2.menu{
 
 /*Contact Page Styles*/
  h2.aboutUs {
-    margin-top:280px;
     background-color:#CBFFE6;
 }
 
@@ -204,9 +218,23 @@ footer{
     background-color:#FEFFBE;
 }
 
+/*Scroll Up Button Styles*/
+.scrollTopBtn{
+    position: fixed;
+    height:2em;
+    width:2em;
+    background: #FFCFEA;
+    border-radius:2em;
+    bottom: 6em;
+    right: 1em;
+    text-align: center;
+    line-height: 2em;
+    color:#4f4f4f;
+    font-size: 2em;
+}
   
 /*Mobile Styles*/
-@media screen and (max-device-width: 41em) {
+@media screen and (max-width: 41em) {
     
     /* Header */
     header {
@@ -230,9 +258,13 @@ footer{
         padding: 0 10px;
     }
 
-    .navigation a {
+    .navigation li a {
         text-align: center;
         padding: 10px;
+        font-size: 2em;
+    }
+    
+    .navigation li {
         border-bottom: 1px solid rgba(176, 168, 250, 0.7);
     }
 
@@ -258,8 +290,7 @@ footer{
     }
 
     /*Text Styles*/
-    body,
-    p {
+    body, p {
         padding: 10px;
     }
     
@@ -269,7 +300,20 @@ footer{
 
     /*Home Page Intro Style*/
      .socialComment {
-        margin-top: 380px;
+        text-align: center;
+    }
+    
+        .socialImages{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    
+    .socialImages img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 1em;
     }
 
     /* Event Styles */
@@ -319,13 +363,13 @@ footer{
         font-size: 1em;
     }
     
-    input[type=reset] {
-        font-size: 1.2em;
+    input[type=reset], input[type=submit]  {
+        font-size: 1em;
+        line-height: 2em;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
     }
 
-    input[type=submit] {
-        font-size: 1.2em;
-    }
     
     /* Contact Page */
     img.aboutUs {
@@ -356,100 +400,199 @@ footer{
         height:50px;
     }
     
-
+    .scrollTopBtn{
+        height:2em;
+        width:2em;
+        bottom: 6em;
+        right: 0;
+        line-height: 2em;
+        font-size: 2em;
+    }
 }
 
 /*Tablet Styles*/
-@media screen and (min-device-width: 42em) and (max-device-width: 64em) {
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    
+    /*Logo Styles*/
+    img.logo{
+        width:15em;
+        height:15em;
+    }
+    
+    /*Heading Styles*/
+    h1 {
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+    h3,h4,h5 {
+        font-size: 2em;
+    }
+
+    h5 {
+        padding-top:1em;
+    }
+    
+    /*Navigation Styles*/
     .navigation {
         justify-content: space-around;
     }
-
-    .socialComment {
-        margin-top: 450px;
+    
+    .navigation li a {
+        font-size:2em;
     }
+    
+    /*Body Text Style*/
+    p{
+        font-size:1em;
+    }
+    
+    /*Social Gallery Styles*/
+    img.socialImages {
+        width:19em;
+        height:19em;
+        margin:2em 2em 0 2em;
+  }
     
     /* Event Styles */
-    
     section.calendarDay {
         border-top: 1px solid rgba(175, 233, 255, 1);
+        justify-content: space-around;
         display: flex;
-        justify-content: space-between;
-        padding: 10px;
+        margin:1em;
+        padding-right:1em;
     }
-
-    section.dayOfMonth {
+    
+    .horizontalEvent {
         display: flex;
-        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
 
     img.cafeEvent {
-        width: 325px;
-        height: 325px;
-        object-fit: cover;
-        border-radius: 20px;
-        padding-bottom: 10px;
+        width:15em;
+        height:15em;
+        margin-top:2em;
     }
     
+    /*Form Styles*/
+    form {
+        font-size:1em;
+    }
+    
+    input[type=reset],input[type=submit] {
+        font-size:2em;
+        line-height: 2em;
+        margin-bottom: 0.2em;
+        text-align: center;
+    } 
 }
 
+
 /*Desktop Styles*/
-@media screen and (min-device-width: 65em){
-    .navigation {
-        justify-content: space-around;
+@media screen and (min-width: 65em){
+    
+    /*Logo Styles*/
+    img.logo{
+        width:18em;
+        height:18em;
     }
     
-    .socialComment {
-        margin-top: 450px;
-    }
     
-    /* Event Styles */
-    .horizontalEvent {
-    display: flex;
-    flex-flow: row wrap;
-        justify-content: space-between;
-    }
-    
-    h2{
-        font-size: 4em;
-    }
-    h3{
+     /*Heading Styles*/
+    h1 {
         font-size: 3em;
     }
-    
-    h4{
-        font-size: 2em;
+
+    h2{
+        font-size: 3em;
+    }
+    h3,h4,h5 {
+        font-size: 2.5em;
+    }
+
+    h5 {
+        padding-top:1em;
     }
     
-    h5{
+    /*Navigation Styles*/
+    .navigation {
+        justify-content: space-evenly;
+    }
+    
+    .navigation li a {
+        font-size:3em;
+    }
+    
+    /*Body Text Style*/
+    p{
         font-size:1.5em;
     }
     
+    /*Social Gallery Styles*/
+    
+    section.socialImages {
+        display:flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    
+    img.socialImages {
+        width:21em;
+        height:21em;
+        margin:2em 2em 0 2em;
+  }
+    
+    img.cafeEvent {
+        width:20em;
+        height:20em;
+        margin-top:2em;
+    }
+    
+    /* Event Styles */
     section.calendarDay {
-    justify-content: space-between;
-    display: flex;
-  }
-
+        border-top: 1px solid rgba(175, 233, 255, 1);
+        justify-content: center;
+        display: flex;
+        margin:1em;
+        padding-right:1em;
+    }
 
     
-  img.cafeEvent {
-    width: 325px;
-    height: 325px;
-    object-fit: cover;
-    border-radius: 20px;
-    padding-bottom: 10px;
-  }
+    /* Event Styles */
+    .horizontalEvent {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
     
-  section.dayOfMonth {
-    margin: 0;
-  }
+    section.dayOfMonth {
+        margin: 1em;
+        padding:1em;
+    }
+    
+    /*Form Styles*/
+    section.eventForm{
+        padding-bottom: 2em;
+    }
+    
+    form {
+        font-size:1em;
+    }
+    
+    input[type=reset],input[type=submit] {
+        font-size:2em;
+        line-height: 2em;
+        margin-bottom: 0.2em;
+        text-align: center;
+    }
 
-
-
-.eventForm {
-  margin: 0 auto;
-}
-
-
+    /*Footer Styles*/
+    footer img{
+        padding-right:1em;
+    }
 
 }
