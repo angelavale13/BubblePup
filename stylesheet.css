@@ -100,7 +100,7 @@ nav{
 .navigation {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     list-style: none;
     margin: 0;
     background: #FFCFEA;
@@ -437,7 +437,7 @@ footer{
     
     /*Navigation Styles*/
     .navigation {
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     
     .navigation li a {
@@ -519,7 +519,8 @@ footer{
     
     /*Navigation Styles*/
     .navigation {
-        justify-content: space-evenly;
+        display:flex;
+        justify-content: space-around;
     }
     
     .navigation li a {
