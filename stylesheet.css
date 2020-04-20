@@ -927,11 +927,11 @@ text-align: center}
     
         /* Contact Page Styles */
     img.aboutUs {
-        width: 19em;
-        height: 19em;
+        width: 30em;
+        height: 30em;
         object-fit: cover;
         border-radius: 2em;
-        margin: 1em 1em 2em;
+        margin: 1em 1em 2em 4em;
     }
     
     .aboutFlex{
@@ -964,7 +964,7 @@ text-align: center}
     section.businessInfo{
         display: flex;
         flex-flow: column wrap;
-        padding: 10px;
+        padding: 3em;
     }
     
     .businessInfo h3, .businessInfo h4 {
