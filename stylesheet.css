@@ -862,7 +862,6 @@ text-align: center}
         text-align: center;
         width:33%;
     }
-
     
     .bobaContents figcaption{
         text-align:match-parent;
@@ -940,7 +939,7 @@ text-align: center}
     }
     
     .aboutFlex p{
-        width:50%;
+        width:40%;
         line-height: 2em;
         padding: 1em 0;
     }
@@ -950,7 +949,7 @@ text-align: center}
         height:30em;
         object-fit: cover;
         border-radius: 2em;
-        margin:6em 0 1em 10em;
+        margin:4em 0 1em 4em;
     }
     
     h2.aboutUs {
@@ -964,7 +963,6 @@ text-align: center}
     section.businessInfo{
         display: flex;
         flex-flow: column wrap;
-        padding: 3em;
     }
     
     .businessInfo h3, .businessInfo h4 {
@@ -976,7 +974,8 @@ text-align: center}
         padding-bottom: 1em;
         padding-left:0;
         border-bottom: 1px solid rgba(175, 233, 255, 1);
-        text-align:left;
+        text-align:center;
+        width:80%;
     }
     
     .businessInfo p:last-of-type, .businessInfo p:nth-last-of-type(2){
