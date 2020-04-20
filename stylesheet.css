@@ -204,11 +204,19 @@ input[type=submit] {
 /*Menu Page Style*/
 h2.menu{
      background-color: #CBFFE6;
+}
+
+h2.bakedMenu {
+        background-color: #AFE9FF;
+}
+
+h2.dogMenu{
+     background-color: #bfb9ff;
     }
 
 /*Contact Page Styles*/
  h2.aboutUs {
-    background-color:#AFE9FF;
+    background-color:#FEFFBE;
 }
 
 h2.contactUs{
@@ -220,10 +228,13 @@ footer{
     background-color:#FEFFBE;
 }
 
-footer img{
-        padding: 1em;
-        width: 5em;
-        height: 5em;
+.bobaPup p{
+text-align: center}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+    color: #636363;
+    font-size:2em;
+    margin:.5em;
     }
 
 /*Scroll Up Button Styles*/
@@ -304,7 +315,7 @@ footer img{
 
     /*Text Styles*/
     p{
-        line-height: 1.3em;
+        line-height: 1.4em;
     }
 
     /*Home Page Intro Style*/
@@ -358,9 +369,6 @@ footer img{
     }
     
     /* Mobile Menu Page */
-    h2.bakedMenu {
-        background-color: #AFE9FF;
-    }
     
     .bobaContents figure{
         display: inline-block;
@@ -378,21 +386,28 @@ footer img{
         font-size:1.6em;
     }
     
-    .bobaContents p, .bakedDesc p, .dogTreats p{
+    .bobaContents p{
         padding-bottom: 1em;
-        border-bottom: 1px solid rgba(175, 233, 255, 1);
+        border-bottom: .3em solid rgba(203, 255, 230, 1);
     }
     
-    .dogTreats p:last-of-type{
-        border-bottom:none;
+    .bakedDesc p{
+        padding-bottom: 1em;
+        border-bottom: .3em solid rgba(175, 233, 255, 1);
     }
+    
+    .dogTreats p{
+        padding-bottom: 1em;
+        border-bottom: .3em solid rgba(191, 185, 255, 1);
+    }
+    
     
     img.bobaImages {
         width: 16em;
         height: 16em;
         object-fit: cover;
         border-radius: 2em;
-        margin:0 1em 1em;
+        margin:1em 1em 1em;
     }
 
     
@@ -444,12 +459,18 @@ footer img{
         border-bottom:none;
     }
     
-    /*Footer Styles*/
-    footer img{
-        padding: 1em;
-        width: 3em;
-        height: 3em;
+        .bobaPup img{
+        width:16em;
+        height:16em;
+        object-fit: cover;
+        border-radius: 2em;
+        margin: 1em 1em 0;
     }
+    /*Footer Style*/
+    .fa-facebook-f, .fa-twitter, .fa-instagram {
+    font-size: 2em;
+    }
+
     
     .scrollTopBtn{
         height:1.5em;
@@ -459,6 +480,7 @@ footer img{
         line-height: 1.5em;
         font-size: 2em;
     }
+    
 }
 
 /*Tablet Styles*//*Tablet Styles*//*Tablet Styles*//*Tablet Styles*//*Tablet Styles*//*Tablet Styles*/
@@ -510,6 +532,7 @@ footer img{
     /*Body Text Style*/
     p{
         font-size:1em;
+        line-height: 1.5em;
     }
     
     /*Social Gallery Styles*/
@@ -565,27 +588,25 @@ footer img{
         text-align: center;
     }
     
-        h2.bakedMenu {
-        background-color: #AFE9FF;
-    }
-    
-    
     .bobaSize{
         display: flex;
+        align-items: flex-end;
     }
     
     .bobaSize figure{
-        display: inline-block;
         padding:1em;
         text-align: center;
         width:33%;
     }
+
     
     .bobaContents figcaption{
         text-align:match-parent;
+        margin: 0;
+        padding:0;
     }
     
-    .bobaDesc{
+    .bobaDesc, .bakedDesc, .dogTreats{
         display:flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -596,6 +617,23 @@ footer img{
         border: solid #CBFFE6;
         margin: 1em;
         border-radius: 2em;
+        width: 90%;
+    }
+    
+    .bakedItem{
+        display: flex;
+        border: solid #AFE9FF;
+        margin: 1em;
+        border-radius: 2em;
+        width: 90%;
+    }
+    
+    .dogItem{
+        display: flex;
+        border: solid #bfb9ff;
+        margin: 1em;
+        border-radius: 2em;
+        width: 90%;
     }
     
     img.bobaImages{
@@ -603,7 +641,6 @@ footer img{
         height:19em;
         object-fit: cover;
         border-radius: 2em;
-        border: 2px solid rgba(99, 99, 99,0.4);
         order: -1;
     }
     
@@ -611,17 +648,83 @@ footer img{
         width:50%;
     }
     
-    .bobaItem h3{
+    .bobaItem h3, .bakedItem h3, .dogItem h3{
         margin-top: 2em;
         text-align: center;
     }
     
-    .bobaItem p{
+    .bobaItem p, .bakedItem p, .dogItem p{
         width:80%;
     }
     
+    /* Contact Page Styles */
+    img.aboutUs {
+        width: 19em;
+        height: 19em;
+        object-fit: cover;
+        border-radius: 2em;
+        margin: 1em 1em 2em;
+    }
     
-   
+    .aboutFlex{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    
+    .aboutFlex p{
+        width:50%;
+        line-height: 2em;
+        padding: 1em 0;
+    }
+    
+    .bobaPup img{
+        width:19em;
+        height:19em;
+        object-fit: cover;
+        border-radius: 2em;
+        margin:4em 0 1em 6em;
+    }
+    
+    .bobaPup p{
+        text-align: center;
+        width:50%;
+        padding: 1em;
+        margin-right: 1em;
+    }
+    
+    h2.aboutUs {
+        margin-top:1em;
+    }
+    
+    .contactContent {
+        display:flex;
+    }
+
+    section.businessInfo{
+        display: block;
+        padding: 10px;
+    }
+    
+    .businessInfo h3, .businessInfo h4 {
+        line-height: 1.5em;
+        text-align: left;
+    }
+    
+    .businessInfo p{
+        padding-bottom: 1em;
+        padding-left:0;
+        border-bottom: 1px solid rgba(175, 233, 255, 1);
+        text-align:left;
+    }
+    
+    .businessInfo p:last-of-type, .businessInfo p:nth-last-of-type(2){
+        border-bottom:none;
+    }
+    
+    .fa-facebook-f, .fa-twitter, .fa-instagram {
+    font-size:3em;
+    }
+
 }
 
 
@@ -673,6 +776,7 @@ footer img{
     /*Body Text Style*/
     p{
         font-size:1.5em;
+        line-height: 1.5em;
     }
     
     /*Social Gallery Styles*/
@@ -733,10 +837,162 @@ footer img{
         margin-bottom: 0.2em;
         text-align: center;
     }
+    
+    /*Menu Styles*/
+    
+    h2.menu{
+        margin-top: 1em;
+    }
+    
+    h4, h5{
+        text-align: center;
+    }
+    
+    h4{
+        margin-top:1em;
+    }
+
+    .bobaSize{
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .bobaSize figure{
+        padding:1em;
+        text-align: center;
+        width:33%;
+    }
+
+    
+    .bobaContents figcaption{
+        text-align:match-parent;
+        margin: 0;
+        padding:0;
+    }
+    
+    .bobaDesc, .bakedDesc, .dogTreats{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+    .bobaItem, .bakedItem{
+        display: flex;
+        flex-flow: row wrap;
+        width:47%;
+        border: solid #CBFFE6;
+        margin: 1em;
+        border-radius: 2em;
+    }
+    
+    .bakedItem{
+        display: flex;
+        flex-flow: row wrap;
+        width:47%;
+        border: solid #AFE9FF;
+        margin: 1em;
+        border-radius: 2em;
+    }
+    
+    .dogItem{
+        display: flex;
+        flex-flow: row wrap;
+        width:47%;
+        border: solid #bfb9ff;
+        margin: 1em;
+        border-radius: 2em;
+    }
+    
+    img.bobaImages{
+        width:19em;
+        height:19em;
+        object-fit: cover;
+        border-radius: 2em;
+        order: -1;
+    }
+    
+    .bobaColumn{
+        width:50%;
+    }
+
+    
+    .bobaItem h3, .bakedItem h3, .dogItem h3{
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+    .bobaItem p, .bakedItem p, .dogItem p{
+        width:80%;
+    }
+    
+        /* Contact Page Styles */
+    img.aboutUs {
+        width: 19em;
+        height: 19em;
+        object-fit: cover;
+        border-radius: 2em;
+        margin: 1em 1em 2em;
+    }
+    
+    .aboutFlex{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    
+    .aboutFlex p{
+        width:50%;
+        line-height: 2em;
+        padding: 1em 0;
+    }
+    
+    .bobaPup img{
+        width:30em;
+        height:30em;
+        object-fit: cover;
+        border-radius: 2em;
+        margin:6em 0 1em 10em;
+    }
+    
+    h2.aboutUs {
+        margin-top:1em;
+    }
+    
+    .contactContent {
+        display:flex;
+    }
+
+    section.businessInfo{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 10px;
+    }
+    
+    .businessInfo h3, .businessInfo h4 {
+        line-height: 1.5em;
+        text-align: center;
+    }
+    
+    .businessInfo p{
+        padding-bottom: 1em;
+        padding-left:0;
+        border-bottom: 1px solid rgba(175, 233, 255, 1);
+        text-align:left;
+    }
+    
+    .businessInfo p:last-of-type, .businessInfo p:nth-last-of-type(2){
+        border-bottom:none;
+    }
+    
+    .bobaPup p{
+        text-align: center;
+        width:50%;
+        padding: 1em;
+        margin-right: 1em;
+    }
 
     /*Footer Styles*/
-    footer img{
-        padding-right:1em;
+    .fa-facebook-f, .fa-twitter, .fa-instagram {
+    font-size:4em;
     }
 
 }
