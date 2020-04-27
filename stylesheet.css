@@ -160,8 +160,8 @@ section.calendarDay {
 form {
     width: auto;
     height: auto;
-    padding:1em;
-    margin:1em 0;
+    padding: 1em;
+    margin:2em;
     border: solid rgba(175, 233, 255, 1);
     border-radius: 1em;
 }
@@ -185,7 +185,6 @@ select {
     margin: 1em 0;
     display: inline-block;
     border: solid rgba(175, 233, 255, 1);
-
     box-sizing: border-box;
 }
 
@@ -253,7 +252,7 @@ text-align: center}
 }
   
 /*Mobile Styles*//*Mobile Styles*//*Mobile Styles*//*Mobile Styles*//*Mobile Styles*/
-@media screen and (max-width: 41em) {
+@media screen and (max-width: 44em) {
     
     /* Header */
     header {
@@ -336,12 +335,15 @@ text-align: center}
     margin: 1em 1em 0;
     }
     
+    .socialImages figure{
+        margin:0 auto;
+    }
+    
     .socialImages figcaption{
         margin: 0 0 1em;
     }
 
     /* Event Styles */
-    
     section.calendarDay {
         border-top: 1px solid rgba(175, 233, 255, 1);
         display: flex;
@@ -354,6 +356,13 @@ text-align: center}
         flex-direction: column;
     }
     
+    section.socialImages {
+        display:flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    
     img.cafeEvent {
         width: 13em;
         height: 13em;
@@ -362,23 +371,28 @@ text-align: center}
     }
     
     .calendarDay figure{
-        margin-top: 2em;
+        padding-top: 2em;
+        margin:0 auto;
     }
     .calendarDay figcaption {
         margin: 0 0 1em;
     }
     
     /* Mobile Menu Page */
-    
-    .bobaContents figure{
-        display: inline-block;
-        padding-left: 1em;
-        padding-bottom: 1em;
+    .bobaSize figure{
+        padding:1em;
         text-align: center;
+        width:33%;
     }
     
     .bobaContents figcaption{
         text-align:match-parent;
+    }
+    
+    .bobaSize{
+        margin:0 auto;
+        display: flex;
+        align-items: flex-end;
     }
     
     h4{
@@ -389,6 +403,10 @@ text-align: center}
     .bobaContents p{
         padding-bottom: 1em;
         border-bottom: .3em solid rgba(203, 255, 230, 1);
+    }
+    
+    .bobaItem {
+        margin: 0 auto;
     }
     
     .bakedDesc p{
@@ -407,11 +425,12 @@ text-align: center}
         height: 16em;
         object-fit: cover;
         border-radius: 2em;
-        margin:1em 1em 1em;
+        margin:0 auto;
+        padding:1em;
     }
 
     
-    /* Form Styles */
+    /* Mobile Form Styles */
     form {
         font-size: 1em;
     }
@@ -424,18 +443,24 @@ text-align: center}
     }
 
     
-    /* Contact Page */
+    /* Mobile Contact Page */
     
     img.aboutUs {
         width: 16em;
         height: 16em;
         object-fit: cover;
         border-radius: 2em;
-        margin: 1em 1em 0;
+        margin: 0 auto;
+        padding:1em;
     }
     
     h2.aboutUs {
         margin-top:1em;
+    }
+    
+    .aboutFlex{
+        display:flex;
+        flex-flow: row wrap;
     }
 
     section.businessInfo{
@@ -459,12 +484,23 @@ text-align: center}
         border-bottom:none;
     }
     
-        .bobaPup img{
+    .bobaPup{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    
+    .bobaPup img{
         width:16em;
         height:16em;
         object-fit: cover;
         border-radius: 2em;
-        margin: 1em 1em 0;
+        margin: 0 auto;
+        padding: 1em;
+    }
+    
+    .bobaPup p{
+        margin: 0 auto;
+        padding: 0 2em;
     }
     /*Footer Style*/
     .fa-facebook-f, .fa-twitter, .fa-instagram {
@@ -484,7 +520,7 @@ text-align: center}
 }
 
 /*Tablet Styles*//*Tablet Styles*//*Tablet Styles*//*Tablet Styles*//*Tablet Styles*//*Tablet Styles*/
-@media screen and (min-width: 42em) and (max-width: 64em) {
+@media screen and (min-width: 45em) and (max-width: 64em) {
     
     /*Logo Styles*/
     img.logo{
@@ -539,8 +575,11 @@ text-align: center}
     img.socialImages {
         width:19em;
         height:19em;
-        margin:2em 2em 0 2em;
+        margin:1em 1em 0 1em;
   }
+    .socialImages figure{
+        margin:0 auto;
+    }
     
     .socialImages figcaption{
         margin: 0 0 1em;
@@ -552,7 +591,6 @@ text-align: center}
         justify-content: space-around;
         display: flex;
         margin:1em;
-        padding-right:1em;
     }
     
     .horizontalEvent {
@@ -677,6 +715,10 @@ text-align: center}
         padding: 1em 0;
     }
     
+    .bobaPup {
+        width:50%;
+    }
+    
     .bobaPup img{
         width:19em;
         height:19em;
@@ -687,9 +729,8 @@ text-align: center}
     
     .bobaPup p{
         text-align: center;
-        width:50%;
         padding: 1em;
-        margin-right: 1em;
+        margin: 0 auto; 
     }
     
     h2.aboutUs {
@@ -702,6 +743,7 @@ text-align: center}
 
     section.businessInfo{
         display: block;
+        width:50%;
         padding: 10px;
     }
     
@@ -729,7 +771,7 @@ text-align: center}
 
 
 /*Desktop Styles*//*Desktop Styles*//*Desktop Styles*//*Desktop Styles*//*Desktop Styles*/
-@media screen and (min-width: 65em){
+@media screen and (min-width: 64.1em){
     
     /*Logo Styles*/
     img.logo{
@@ -788,6 +830,10 @@ text-align: center}
         align-items: center;
     }
     
+    .socialImages figure{
+        margin:0 auto;
+    }
+    
     img.socialImages {
         width:21em;
         height:21em;
@@ -810,8 +856,7 @@ text-align: center}
     }
 
     
-    /* Event Styles */
-    .horizontalEvent {
+    section.horizontalEvent {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -819,7 +864,6 @@ text-align: center}
     
     section.dayOfMonth {
         margin: 1em;
-        padding:1em;
     }
     
     /*Form Styles*/
@@ -828,6 +872,8 @@ text-align: center}
     }
     
     form {
+        width: 50%;
+        margin: 0 auto;
         font-size:1em;
     }
     
@@ -872,10 +918,9 @@ text-align: center}
     .bobaDesc, .bakedDesc, .dogTreats{
         display:flex;
         flex-flow: row wrap;
-        justify-content: space-around;
     }
     
-    .bobaItem, .bakedItem{
+    .bobaItem{
         display: flex;
         flex-flow: row wrap;
         width:47%;
@@ -924,13 +969,13 @@ text-align: center}
         width:80%;
     }
     
-        /* Contact Page Styles */
+    /* Contact Page Styles */
     img.aboutUs {
-        width: 30em;
-        height: 30em;
+        width: 25em;
+        height: 25em;
         object-fit: cover;
         border-radius: 2em;
-        margin: 1em 1em 2em 4em;
+        margin: 1em 1em 0 2em;
     }
     
     .aboutFlex{
@@ -939,14 +984,14 @@ text-align: center}
     }
     
     .aboutFlex p{
-        width:40%;
+        width:50%;
         line-height: 2em;
         padding: 1em 0;
     }
     
     .bobaPup img{
-        width:30em;
-        height:30em;
+        width:25em;
+        height:25em;
         object-fit: cover;
         border-radius: 2em;
         margin:4em 0 1em 4em;
@@ -963,11 +1008,13 @@ text-align: center}
     section.businessInfo{
         display: flex;
         flex-flow: column wrap;
+        width:50%;
     }
     
-    .businessInfo h3, .businessInfo h4 {
-        line-height: 1.5em;
+    .businessInfo h4 {
+        line-height: 1.3em;
         text-align: center;
+        padding:0;
     }
     
     .businessInfo p{
@@ -978,20 +1025,62 @@ text-align: center}
         width:80%;
     }
     
-    .businessInfo p:last-of-type, .businessInfo p:nth-last-of-type(2){
+     .businessInfo p:nth-last-of-type(1), .businessInfo p:nth-last-of-type(2){
         border-bottom:none;
     }
     
+    .bobaPup {
+        width:50%;
+    }
     .bobaPup p{
         text-align: center;
-        width:50%;
-        padding: 1em;
-        margin-right: 1em;
+        margin:0 auto;
     }
+    
+    .contactForm{
+        margin:1em;
+        width:100%;
+    }
+    
+    form{
+        padding: 1em;
+        display:flex;
+        flex-flow:row wrap;
+        width: 55em;
+        margin: 0 auto;
+    }
+    
+    input[type=text] {
+        padding: 2em;
+        width: 25em;
+    }
+    
+    input[type=submit], input[type=reset] {
+        padding: 1em;
+        width: 10em;
+        margin: 1em auto;
+        line-height: 1em;
+        font-size: 1.5em;
+    }
+
+    form label{
+        width:3em;
+        padding:1em;
+    }
+    
+    #bodyEmail{
+        margin:3em;
+        width:100%;
+    }
+
 
     /*Footer Styles*/
     .fa-facebook-f, .fa-twitter, .fa-instagram {
     font-size:4em;
+    }
+    
+    footer{
+        margin-top: 1em;
     }
 
 }
