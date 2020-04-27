@@ -252,7 +252,7 @@ text-align: center}
 }
   
 /*Mobile Styles*//*Mobile Styles*//*Mobile Styles*//*Mobile Styles*//*Mobile Styles*/
-@media screen and (max-width: 44em) {
+@media screen and (max-width: 44.09em) {
     
     /* Header */
     header {
@@ -520,7 +520,7 @@ text-align: center}
 }
 
 /*Tablet Styles*//*Tablet Styles*//*Tablet Styles*//*Tablet Styles*//*Tablet Styles*//*Tablet Styles*/
-@media screen and (min-width: 45em) and (max-width: 64em) {
+@media screen and (min-width: 44.1em) and (max-width: 64.09em) {
     
     /*Logo Styles*/
     img.logo{
